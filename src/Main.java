@@ -32,7 +32,7 @@ public class Main {
         for (int i = 0; i < arr.length; i++) {
             sum += arr[i];
         }
-        double avg = sum / 4d;
+        double avg = sum / arr.length;
         System.out.println("Средняя сумма трат за месяц составила " + avg + " рублей");
         System.out.println();
         System.out.println("Задача 4");
