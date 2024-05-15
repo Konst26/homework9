@@ -17,28 +17,26 @@ public class Main {
         int[] arr = {500, 1500, 2000, 2500, 1500, 1700, 1600};
         int min = 10000;
         int max = 1;
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] < min) {
-                min = arr[i];
+        for (int k : arr) {
+            if (k < min) {
+                min = k;
             }
-            if (arr[i] > max) {
-                max = arr[i];
+            if (k > max) {
+                max = k;
             }
         }
         System.out.println("Минимальная сумма трат за неделю составила " + min + " рублей " + "Максимальная сумма трат за неделю составила " + max + " рублей");
         System.out.println();
         System.out.println("Задача 3");
         int sum = 0;
-        for (int i = 0; i < arr.length; i++) {
-            sum += arr[i];
+        for (int j : arr) {
+            sum += j;
         }
-        double avg = sum / arr.length;
+        double avg = (double) sum / arr.length;
         System.out.println("Средняя сумма трат за месяц составила " + avg + " рублей");
         System.out.println();
         System.out.println("Задача 4");
         char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
-        for (int i = reverseFullName.length - 1; i>=0; i--) {
-            System.out.print(reverseFullName[i]);
-        }
+        for (int i = reverseFullName.length - 1; i>=0; i--) System.out.print(reverseFullName[i]);
     }
 }
